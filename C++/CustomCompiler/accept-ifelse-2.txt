@@ -1,0 +1,222 @@
+int32 good = 777
+int32 bad = 666
+int32 separator = 11111111
+int32 var1 = 2
+<< var1
+if (var1 == var1) {
+<< good
+}
+<< separator
+int32 var2 = var1 + var1
+<< var2
+if (var1 == var2) {
+<< bad
+}
+<< separator
+if (var1 < var2) {
+<< good
+}
+<< separator
+int32 var3 = -2
+int32 var4 = -1
+if (var3 < var4) {
+<< good
+}
+<< separator
+if (var4 < var3) {
+<< bad
+}
+<< separator
+if (var1 == var1) {
+<< good
+} else {
+<< bad
+}
+<< separator
+if (var1 == var2) {
+<< bad
+} else {
+<< good
+}
+<< separator
+if (var1 == var1) {
+<< good
+<< good
+<< good
+} else {
+<< bad
+<< bad
+<< bad
+}
+<< separator
+if (var1 == var1) {
+int32 newVarA = 1234
+<< newVarA
+} else {
+int32 newVarB = 2345
+<< newVarB
+}
+<< separator
+<< separator
+<< separator
+<< separator
+var1 = 2
+<< var1
+var2 = var1 + var1
+<< var2
+var3 = var1 * var2
+<< var3
+var4 = var3 - var2
+<< var4
+int32 var5 = var4 / var3
+<< var5
+int32 var6 = var1 + var2 * var3
+<< var6
+int32 var7 = var4-var1
+<< var7
+int32 var8 = 3*4
+<< var8
+int32 var9 = 12 / 6
+<< var9
+int32 var10 = 12/6
+<< var10
+int32 var11 = 5 + 4 * 3
+<< var11
+int32 var12 = 12 + 34 * 45
+<< var12
+int32 var13 = (6 / 5)
+<< var13
+int32 var14 = 2 * 2 + 5 * 5
+<< var14
+int32 var15 = 42
+<< var15
+int32 var16 = (42)
+<< var16
+int32 var17 = ((42))
+<< var17
+int32 var18 = ( ( 42 ) )
+<< var18
+int32 var19 = var1
+<< var19
+int32 var20 = var1 + var19
+<< var20
+int32 var21 = var1 + var2
+<< var21
+int32 var22 = var9 * var10
+<< var22
+int32 var23 = var1+var2*var3
+<< var23
+int32 var24 = var19-var20
+<< var24
+int32 var25 = 1234*5678
+<< var25
+int32 var26 = 100000/var13
+<< var26
+int32 var27 = ((12-8)-3)
+<< var27
+int32 var28 = (5*(8/4))
+<< var28
+int32 var29 = (1+2) * 3
+<< var29
+int32 var30 = ((var1/var2)+(var3*var4))
+<< var30
+int32 a = 1
+int32 a_ = 2
+int32 v_____2 = 2
+int32 v__3__ = 3
+int32 var31 = a_
+<< var31
+int32 var32 = (a_)
+<< var32
+int32 var33 = (v_____2 + v__3__)
+<< var33
+int32 var34 = (((( 300 + var1 ))))
+<< var34
+int32 var35 = ( var33 -var2) + 18
+<< var35
+int32 var36 = (((((9+(2*(110-(30/2))))*8)+1000)/2)+(((3*3*3*3)+1)/2))
+<< var36
+int32 var37 = 2 + 3
+<< var37
+int32 var38 = ( var1 +var2)
+<< var38
+int32 var39 = -42
+<< var39
+int32 var40 = (-42)
+<< var40
+int32 var41 = ( -42)
+<< var41
+int32 var42 = -var1
+<< var42
+int32 var43 = -1 * var1 / -1
+<< var43
+int32 var44 = 2-3
+<< var44
+int32 var45 = 2 - 3
+<< var45
+int32 var46 = 2 - -3
+<< var46
+int32 var47 = 2- -3
+<< var47
+int32 var48 = -2-3
+<< var48
+int32 var49 = -2- -3
+<< var49
+int32 var50 = -2 - -3
+<< var50
+int32 var51 = (-2 - -3)
+<< var51
+int32 var52 = ( -2 - -3)
+<< var52
+int32 var53 = -2-(-3)
+<< var53
+int32 var54 = -2-( -3)
+<< var54
+int32 var55 = -2 - (-3)
+<< var55
+int32 var56 = -2 - (-3 - (4))
+<< var56
+int32 var57 = -2 - (-3 - (4))
+<< var57
+int32 var58 = -2 - ( -3 -( -4))
+<< var58
+int32 var59 = -2-(-2-(-2-2))
+<< var59
+int32 var60 = -2 - (-2 - (-2 - 2))
+<< var60
+int32 var61 = -11-(-22 - (-33-(-44 - (-55 - (-66)))))
+<< var61
+int32 var62 = 2--3
+<< var62
+int32 var63 = 2+-3
+<< var63
+int32 var64 = 184 +- 84
+<< var64
+int32 var65 = 2--a
+<< var65
+int32 var66 = 2+-a
+<< var66
+int32 var67 = 2 + - 4
+<< var67
+int32 var68 = 2 + - 4
+<< var68
+int32 var69 = 2 +- 4
+<< var69
+int32 var70 = 4 * 3 / 2 + 1
+<< var70
+int32 four = 4
+int32 three = 3
+int32 two = 2
+int32 one = 1
+int32 var71 = four * three / two + one
+<< var71
+int32 var72 = 4 * 3 / 2 + one
+<< var72
+int32 var73 = (((2+3)*4)+(7+(8/2)))
+<< var73
+int32 var74 = (((2+3)*4)+(7+(var1/2)))
+<< var74
+int32 var75 = 1234
+<< var75
+int32 var76=314
+<< var76

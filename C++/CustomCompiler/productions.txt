@@ -1,0 +1,48 @@
+*Goal -> LineFull
+LineFull -> Decl LineVarNameRemaining
+LineFull -> name LineVarNameRemaining
+LineFull -> << GTermSign
+LineFull' -> name
+LineFull' -> LineFull LineFull'
+LineFull' -> ; LineFull'
+LineFull' -> ε
+PLineFull -> ( LineFull' )
+Bool' -> == Ternary
+Bool' -> != Ternary
+Bool' -> < Ternary
+Bool' -> <= Ternary
+Bool' -> > Ternary
+Bool' -> >= Ternary
+Bool' -> ε
+Ternary -> name AfterBool
+AfterBool -> ? AfterIf
+AfterIf -> PLineFull Else
+Else -> : PLineFull
+Decl -> int32 NameEnd
+Decl -> float32 NameEnd
+NameEnd -> name
+LineVarNameRemaining -> = Expr Bool'
+LineVarNameRemaining -> Bool'
+Expr -> LTermAddSub AddSub'
+LTermAddSub -> LTermMultDiv MultDiv'
+LTermMultDiv -> LTermPower Power'
+RTermAddSub -> RTermMultDiv MultDiv'
+RTermMultDiv -> RTermPower Power'
+AddSub' -> + RTermAddSub AddSub'
+AddSub' -> - RTermAddSub AddSub'
+AddSub' -> ε
+MultDiv' -> MultDivAndRightOp
+MultDiv' -> ε
+MultDivAndRightOp -> * RTermMultDiv MultDiv'
+MultDivAndRightOp -> / RTermMultDiv MultDiv'
+Power' -> PowerAndRightOp
+Power' -> ε
+PowerAndRightOp -> ^ RTermPower Power'
+LTermPower -> GTermSign
+RTermPower -> GTermSign
+GTermSign -> GTerm
+GTermSign -> - GTerm
+GTerm -> Parens
+GTerm -> name
+GTerm -> num
+Parens -> ( Expr )
