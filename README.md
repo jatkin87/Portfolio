@@ -1,5 +1,5 @@
-#Portfolio
-##<ins>C++</ins>
+# Portfolio
+## <ins>C++</ins>
 -Compiler
 This is a compiler written for a C++ Class. Driver.cc demonstrates my knowledge of C++ and Object Oriented Programming. 
 The headers were removed to avoid providing answers to people who are in a similar class.
